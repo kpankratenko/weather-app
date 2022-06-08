@@ -1,0 +1,77 @@
+.container {
+  width: 660px;
+  margin: 20px;
+}
+.cities {
+  width: 60%;
+  font-size: 13px;
+  padding-bottom: 15px;
+  color: #023645;
+}
+.lisb {
+  padding-right: 0px;
+  text-decoration: underline;
+}
+.par,
+.syd,
+.san {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.enter {
+  width: 350px;
+  border-radius: 5px;
+}
+
+.search-button {
+  background-color: #00bcf2;
+  border-radius: 5px;
+  color: aliceblue;
+  border-color: #00bcf2;
+  box-shadow: 0px 5px 10px rgb(216 214 214);
+  transition: all 200ms ease-in-out;
+}
+.search-button:hover {
+  opacity: 40%;
+}
+
+.current-button {
+  margin-left: 20px;
+  background-color: rgb(125, 124, 124);
+  border-radius: 5px;
+  color: aliceblue;
+  border-color: rgb(125, 124, 124);
+  box-shadow: 0px 5px 10px rgb(216 214 214);
+  transition: all 200ms ease-in-out;
+}
+
+.current-button:hover {
+  opacity: 40%;
+}
+
+.now-weather {
+  padding: 15px 0px;
+}
+
+.clearfix {
+  display: inline;
+}
+h1 {
+  font-size: 52px;
+}
+
+.dates {
+  padding-left: 54px;
+}
+.col1,
+.col2,
+.col3,
+.col4 {
+  width: 18%;
+  text-align: left;
+  text-align: center;
+  font-size: 13px;
+}
+.rain-icon {
+  color: rgb(25, 25, 196);
+}
