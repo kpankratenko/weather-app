@@ -2,6 +2,7 @@
   width: 660px;
   margin: 20px;
 }
+
 .cities {
   width: 60%;
   font-size: 13px;
@@ -74,4 +75,9 @@ h1 {
 .units {
   position: relative;
   top: -34px;
+}
+
+.sign {
+  margin-left: 30px;
+  font-size: 11px;
 }
