@@ -1,83 +1,74 @@
-.container {
-  width: 660px;
-  margin: 20px;
-}
-
-.cities {
-  width: 60%;
-  font-size: 13px;
-  padding-bottom: 15px;
-  color: #023645;
-}
-.lisb {
-  padding-right: 0px;
-  text-decoration: underline;
-}
-.par,
-.syd,
-.san {
-  padding-right: 0px;
-  padding-left: 0px;
-}
-.enter {
-  width: 350px;
-  border-radius: 5px;
-}
-.search-button:hover {
-  opacity: 40%;
-}
-
-.current-button {
-  background-color: rgb(125, 124, 124);
-  border-color: rgb(125, 124, 124);
-}
-
-.current-button:hover {
-  opacity: 40%;
-}
-
-.now-weather {
-  padding: 15px 0px;
+body {
+  font-family: arial, sans-serif;
 }
 
 h1 {
-  font-size: 52px;
+  color: #878787;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 0;
 }
 
-.dates {
-  padding-left: 54px;
+ul {
+  margin: 0;
+  padding: 0;
 }
-.col1,
-.col2,
-.col3,
-.col4 {
-  width: 18%;
-  text-align: left;
-  text-align: center;
-  font-size: 13px;
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
 }
-.rain-icon {
-  color: rgb(25, 25, 196);
+
+li:first-letter {
+  text-transform: capitalize;
 }
-.weather-icon {
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.weather-temperature img {
+  margin-right: 5px;
   height: 64px;
   width: 64px;
-  margin-right: 10px;
 }
 
-.temperature {
+.weather-temperature strong {
   color: rgb(33, 33, 33);
   font-size: 64px;
-  font-weight: 400;
   line-height: 1;
+  font-weight: 400;
 }
 
-.units {
+.weather-temperature .units {
   position: relative;
+  font-size: 16px;
   top: -34px;
 }
 
-.sign {
-  margin-left: 30px;
-  font-size: 11px;
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
