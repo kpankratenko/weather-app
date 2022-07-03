@@ -18,117 +18,66 @@
   </head>
   <body>
     <div class="container">
-      <div class="card">
-        <div class="card-body">
-          <div class="row col cities">
-            <div class="col lisb"><strong>Lisbon</strong></div>
-            <div class="col par"><strong> Paris </strong></div>
-            <div class="col syd"><strong>Sydney </strong></div>
-            <div class="col san"><strong>San Francisco </strong></div>
-          </div>
-          <form class="search-form" id="search-form">
-            <div class="row g-3">
-              <div class="col-auto">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
                 <input
-                  type="text"
-                  placeholder="Enter a city"
-                  class="enter form-control"
+                  type="search"
+                  placeholder="Type a city.."
+                  class="form-control"
                   id="city-input"
-                  autofocus
+                  autocomplete="off"
                 />
               </div>
-              <div class="col-auto">
+              <div class="col-3">
                 <input
-                  class="btn btn-primary search-button"
                   type="submit"
                   value="Search"
-                />
-              </div>
-              <div class="col-auto">
-                <input
-                  class="btn btn-primary current-button"
-                  id="current-location-button"
-                  type="submit"
-                  value="Current"
+                  class="btn btn-primary w-100"
                 />
               </div>
             </div>
           </form>
-          <br />
-          <div class="now-weather">
-            <div id="city"></div>
-            <div>Last updated: <span id="date"> </span></div>
-            <div id="description"></div>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
           </div>
           <div class="row">
             <div class="col-6">
-              <div class="clearfix">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="Clear" id="icon" class="float-left" />
                 <div class="float-left">
-                  <span class="temperature" id="temperature"></span>
-                  <span class="units"> C</span>
+                  <strong id="temperature"></strong
+                  ><span class="units"
+                    ><a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span
+                  >
                 </div>
               </div>
             </div>
-            <div class="col-6 dates">
-              <p>
-                Humidity: <span id="humidity"></span>% <br />
-                Wind: <span id="wind"></span> km/h <br />
-              </p>
-            </div>
-          </div>
-          <br />
-          <div class="row col">
-            <div class="col-1 col1">
-              Mon <br /><img
-                src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
-                alt="weath1"
-              />
-              <br />
-              15°
-            </div>
-            <div class="col-1 col2">
-              Tue <br />
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/48/rain.png"
-                alt="weath1"
-              />
-              <br />
-              20°
-            </div>
-            <div class="col-1 col3">
-              Wed <br />
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/48/rain.png"
-                alt="weath1"
-              />
-              <br />
-              15°
-            </div>
-            <div class="col-1 col3">
-              Thu <br /><img
-                src="https://ssl.gstatic.com/onebox/weather/48/rain.png"
-                alt="weath1"
-              /><br />
-              23°
-            </div>
-            <div class="col-1 col4">
-              Fri <br />
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/48/rain.png"
-                alt="weath1"
-              /><br />
-              15°
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
             </div>
           </div>
         </div>
+        <small>
+          <a
+            href="https://github.com/wecodeschool/vanilla-weather-app"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Matt Delac
+        </small>
       </div>
     </div>
-    <p class="sign">
-      <a href="https://github.com/kpankratenko/weather-app" target="_blank"
-        >Open-source code</a
-      >
-      by Kseniia Pankratenko
-    </p>
-    <script src="src/index.js"></script>
+    <script src="src/app.js"></script>
   </body>
 </html>
